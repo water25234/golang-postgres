@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/water25234/golang-postgres/app/controller/api/v1"
+	"github.com/water25234/golang-postgres/app/controller/api"
 	core "github.com/water25234/golang-postgres/core/server"
 	"github.com/water25234/golang-postgres/server"
 )
