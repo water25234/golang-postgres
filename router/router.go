@@ -2,8 +2,8 @@ package router
 
 import (
 	"github.com/gin-gonic/gin"
-	apiv1auth "github.com/water25234/golang-postgres/api/v1/auth"
-	apiv1user "github.com/water25234/golang-postgres/api/v1/user"
+	apiv1auth "github.com/water25234/golang-postgres/app/controller/api/v1/auth"
+	apiv1user "github.com/water25234/golang-postgres/app/controller/api/v1/user"
 	"github.com/water25234/golang-postgres/middleware"
 )
 

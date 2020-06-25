@@ -3,10 +3,9 @@ package apiv1user
 import (
 	"net/http"
 
-	api "github.com/water25234/golang-postgres/api/v1"
-	"github.com/water25234/golang-postgres/core/log"
-
 	"github.com/gin-gonic/gin"
+	"github.com/water25234/golang-postgres/app/controller/api/v1"
+	"github.com/water25234/golang-postgres/core/log"
 )
 
 func GetUser(ctx *gin.Context) {

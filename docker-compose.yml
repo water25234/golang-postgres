@@ -12,7 +12,7 @@ services:
         volumes:
             - ./logs/golang:/var/lib/log/golang
         ports:
-            - "8000:8000"
+            - "8080:8080"
         restart: unless-stopped
         networks:
             - backend
@@ -23,7 +23,7 @@ services:
         build:
             context: ./docker/postgres
         volumes:
-            - ./data/db/postgres:/var/lib/database/postgresql/
+            - ../golangDB/data/db/postgres:/var/lib/database/postgresql/
             - ./logs/postgres:/var/lib/log/postgres
         ports:
             - "5432:5432"

@@ -3,9 +3,8 @@ package apiv1auth
 import (
 	"net/http"
 
-	api "github.com/water25234/golang-postgres/api/v1"
-
 	"github.com/gin-gonic/gin"
+	"github.com/water25234/golang-postgres/app/controller/api/v1"
 )
 
 func GetAuth(ctx *gin.Context) {
