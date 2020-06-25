@@ -18,10 +18,16 @@ type ServerConfig struct {
 }
 
 type AppConfig struct {
-	AppLogPath string
-	RedisHost  string
-	RedisPort  string
-	RedisDB    int
+	AppLogPath   string
+	dbConnection string
+	dbHost       string
+	dbPort       int
+	dbDatabase   string
+	dbUsername   string
+	dbPassword   string
+	RedisHost    string
+	RedisPort    string
+	RedisDB      int
 }
 
 func init() {
@@ -50,10 +56,16 @@ func SetAppConfig() {
 	redisDb, _ := strconv.Atoi(os.Getenv("REDIS_DB"))
 
 	appConfig = &AppConfig{
-		AppLogPath: os.Getenv("APP_LOG_PATH"),
-		RedisHost:  os.Getenv("REDIS_HOST"),
-		RedisPort:  os.Getenv("REDIS_PORT"),
-		RedisDB:    redisDb,
+		AppLogPath:   os.Getenv("APP_LOG_PATH"),
+		dbConnection: os.Getenv("DB_CONNECTION"),
+		dbHost:       os.Getenv("DB_HOST"),
+		dbPort:       os.Getenv("DB_PORT"),
+		dbDatabase:   os.Getenv("DB_DATABASE"),
+		dbUsername:   os.Getenv("DB_USERNAME"),
+		dbPassword:   os.Getenv("DB_PASSWORD"),
+		RedisHost:    os.Getenv("REDIS_HOST"),
+		RedisPort:    os.Getenv("REDIS_PORT"),
+		RedisDB:      redisDb,
 	}
 }
 
