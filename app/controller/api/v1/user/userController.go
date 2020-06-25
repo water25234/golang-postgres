@@ -13,3 +13,9 @@ func GetUser(ctx *gin.Context) {
 	log.Info("test get user log")
 	ctx.JSON(http.StatusOK, api.GetSuccessResponse(gin.H{"userId": uid}))
 }
+
+func GetUserList() {
+	uid := ctx.Param("uid")
+	log.Info("test get user log")
+	ctx.JSON(http.StatusOK, api.GetSuccessResponse(gin.H{"userId": uid}))
+}
