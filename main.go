@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/water25234/Golang-Gin-Framework/router"
+	"github.com/water25234/golang-postgres/router"
 )
 
 func main() {

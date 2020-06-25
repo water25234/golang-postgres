@@ -2,9 +2,9 @@ package router
 
 import (
 	"github.com/gin-gonic/gin"
-	apiv1auth "github.com/water25234/Golang-Gin-Framework/api/v1/auth"
-	apiv1user "github.com/water25234/Golang-Gin-Framework/api/v1/user"
-	"github.com/water25234/Golang-Gin-Framework/middleware"
+	apiv1auth "github.com/water25234/golang-postgres/api/v1/auth"
+	apiv1user "github.com/water25234/golang-postgres/api/v1/user"
+	"github.com/water25234/golang-postgres/middleware"
 )
 
 func SetupRouter() *gin.Engine {

@@ -13,11 +13,11 @@ var encoderConfig zapcore.EncoderConfig
 
 func init() {
 	hook = lumberjack.Logger{
-		Filename:   "./logs/Golang-Gin-Framework.log", // 日誌檔案路徑
-		MaxSize:    128,                               // 每個日誌檔案儲存的最大尺寸 單位：M
-		MaxBackups: 30,                                // 日誌檔案最多儲存多少個備份
-		MaxAge:     7,                                 // 檔案最多儲存多少天
-		Compress:   true,                              // 是否壓縮
+		Filename:   "./logs/golang-postgres.log", // 日誌檔案路徑
+		MaxSize:    128,                          // 每個日誌檔案儲存的最大尺寸 單位：M
+		MaxBackups: 30,                           // 日誌檔案最多儲存多少個備份
+		MaxAge:     7,                            // 檔案最多儲存多少天
+		Compress:   true,                         // 是否壓縮
 	}
 
 	encoderConfig = zapcore.EncoderConfig{

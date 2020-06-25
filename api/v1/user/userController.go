@@ -3,8 +3,8 @@ package apiv1user
 import (
 	"net/http"
 
-	api "github.com/water25234/Golang-Gin-Framework/api/v1"
-	"github.com/water25234/Golang-Gin-Framework/core/log"
+	api "github.com/water25234/golang-postgres/api/v1"
+	"github.com/water25234/golang-postgres/core/log"
 
 	"github.com/gin-gonic/gin"
 )

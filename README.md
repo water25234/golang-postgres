@@ -1,11 +1,9 @@
-# Golang-Gin-Framework
+# Golang-Postgres
 
 ## Prerequisite
-- GO v1.12
+- GO v1.14
 - Redis
+- postgres
 
 ## Build the project
 - docker-compose up -d
-
-## test url
-- localhost:8080/api/v1/auth/throttle

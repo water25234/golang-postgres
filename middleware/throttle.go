@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/water25234/Golang-Gin-Framework/api/v1"
-	core "github.com/water25234/Golang-Gin-Framework/core/server"
-	"github.com/water25234/Golang-Gin-Framework/server"
+	"github.com/water25234/golang-postgres/api/v1"
+	core "github.com/water25234/golang-postgres/core/server"
+	"github.com/water25234/golang-postgres/server"
 )
 
 var maxAttempts int

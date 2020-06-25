@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/go-redis/redis"
-	"github.com/water25234/Golang-Gin-Framework/core/log"
-	core "github.com/water25234/Golang-Gin-Framework/core/server"
+	"github.com/water25234/golang-postgres/core/log"
+	core "github.com/water25234/golang-postgres/core/server"
 )
 
 var client *redis.Client
