@@ -10,7 +10,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
-	apiv1auth "github.com/water25234/golang-postgres/api/v1/auth"
+	apiv1auth "github.com/water25234/golang-postgres/app/controller/api/v1/auth"
 )
 
 type Auth struct {

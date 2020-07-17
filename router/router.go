@@ -27,7 +27,11 @@ func SetupRouter() *gin.Engine {
 
 		userRouting := v1.Group("/user")
 		{
-			userRouting.GET("/:uid", apiv1user.GetUser)
+			userRouting.GET("/list", apiv1user.GetUserListVersion2)
+
+			userRouting.GET("/item/:uid", apiv1user.GetUser)
+
+			userRouting.POST("/addUser", apiv1user.AddUser)
 		}
 	}
 

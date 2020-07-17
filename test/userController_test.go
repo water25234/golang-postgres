@@ -10,7 +10,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
-	apiv1user "github.com/water25234/golang-postgres/api/v1/user"
+	apiv1user "github.com/water25234/golang-postgres/app/controller/api/v1/user"
 )
 
 type User struct {
